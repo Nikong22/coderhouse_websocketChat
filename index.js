@@ -31,7 +31,7 @@ app.use('/api', router);
 app.use(express.static('public'));
 
 const server = http.listen(PORT,
-  () => console.log('escuchando...'));
+  () => console.log('escuchando en puerto 8080'));
 server.on('error', error=>console.log('Error en servidor', error));
 
 router.get('/', (req,res)=>{
